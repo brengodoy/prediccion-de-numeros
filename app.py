@@ -81,9 +81,9 @@ drawing_area.pack(expand=YES, fill=BOTH)
 drawing_area.bind("<Button-1>", start_drawing)  
 drawing_area.bind("<B1-Motion>", draw)          
 
-# Botón para guardar
-save_btn = Button(lienzo, text="Predecir", bg="green", fg="white", command=save)
-save_btn.pack()
+# # Botón para guardar
+# save_btn = Button(lienzo, text="Predecir", bg="green", fg="white", command=save)
+# save_btn.pack()
 
 # boton para borrar
 delete_btn = Button(lienzo, text="Borrar", bg="red", fg="white", command=delete_all)
