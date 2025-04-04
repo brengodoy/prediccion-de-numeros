@@ -19,6 +19,7 @@ def draw(event):
     x, y = event.x, event.y
     drawing_area.create_line((last_x, last_y, x, y), fill="black", width=10, capstyle=ROUND, smooth=TRUE)
     last_x, last_y = x, y
+    save()
 
 def save():
     file_name = "imagen.png"
