@@ -16,7 +16,7 @@ data_mnist = datasets.MNIST(
 #separamos los datos en entrenamiento, validacion y prueba
 torch.manual_seed(42)
 
-# dividir el dataset en 3 datasets
+# dividir el dataset en 2 datasets
 train, val = random_split(data_mnist, [0.9, 0.1]) # random_split espera cantidades enteras, no porcentajes, pero internamente convierte estos valores multiplicándolos por la cantidad total de datos.
     
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
