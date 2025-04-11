@@ -128,5 +128,5 @@ for t in range(EPOCHS):
     val_loop(val_loader,model,fn_loss)
 
 # Después de entrenar el modelo, lo guardo
-torch.save(model.state_dict(), 'model.pth')
+torch.save(model.state_dict(), 'model_number.pth')
 print("Entrenamiento terminado!")

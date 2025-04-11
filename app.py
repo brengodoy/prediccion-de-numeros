@@ -53,7 +53,7 @@ def save():
     model = NeuralNetwork()  # Usamos la misma estructura del modelo
 
     # 2. Cargar los pesos del modelo entrenado
-    model.load_state_dict(torch.load('model.pth', weights_only=True))  # Asegúrate de que el archivo 'model.pth' esté en la misma carpeta
+    model.load_state_dict(torch.load('model_number.pth', weights_only=True))  # Asegúrate de que el archivo 'model.pth' esté en la misma carpeta
     model.eval()  # Cambiar el modelo a modo de evaluación
     
     # Hacer la predicción
